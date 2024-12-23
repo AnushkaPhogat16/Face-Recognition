@@ -11,13 +11,13 @@ face_detector = dlib.get_frontal_face_detector()
 win = dlib.image_window()
 
 # Load the image into an array
-image = io.imread('facerecc.jpeg')
+image = io.imread('facerecc3.jpeg')
 
 # Run the HOG face detector on the image data.
 # The result will be the bounding boxes of the faces in our image.
 detected_faces = face_detector(image, 1)
 
-print("I found {} faces in the file {}".format(len(detected_faces), 'facerecc.jpeg'))
+print("I found {} faces in the file {}".format(len(detected_faces), 'facerecc3.jpeg'))
 
 # Open a window on the desktop showing the image
 win.set_image(image)
